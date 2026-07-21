@@ -1,0 +1,111 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+# Date created = 09:57:36  May 20, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		hito3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C6GES
+set_global_assignment -name TOP_LEVEL_ENTITY interfaz_spi
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:57:36  MAY 20, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_W16 -to segmentos[0]
+set_location_assignment PIN_Y5 -to sel_disp[0]
+set_location_assignment PIN_W6 -to sel_disp[1]
+set_location_assignment PIN_W8 -to sel_disp[2]
+set_location_assignment PIN_AB8 -to sel_disp[3]
+set_location_assignment PIN_R11 -to sel_disp[4]
+set_location_assignment PIN_AB6 -to sel_disp[5]
+set_location_assignment PIN_AA6 -to sel_disp[6]
+set_location_assignment PIN_V10 -to sel_disp[7]
+set_location_assignment PIN_AB11 -to segmentos[1]
+set_location_assignment PIN_W15 -to segmentos[2]
+set_location_assignment PIN_AB10 -to segmentos[3]
+set_location_assignment PIN_AA15 -to segmentos[4]
+set_location_assignment PIN_W12 -to segmentos[5]
+set_location_assignment PIN_AA13 -to segmentos[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CL
+set_instance_assignment -name IO_STANDARD "1.5 V SCHMITT TRIGGER" -to KEY_0
+set_instance_assignment -name IO_STANDARD "1.5 V SCHMITT TRIGGER" -to KEY_1
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to nRst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDAT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[6]
+set_location_assignment PIN_AB17 -to nRst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to segmentos[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sel_disp[2]
+set_location_assignment PIN_H21 -to KEY_0
+set_location_assignment PIN_H22 -to KEY_1
+set_location_assignment PIN_M8 -to clk
+set_location_assignment PIN_AB4 -to CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CS
+set_location_assignment PIN_Y2 -to SDAT
+set_location_assignment PIN_AA1 -to CL
+set_global_assignment -name VHDL_FILE ../VHD/rep_disp.vhd
+set_global_assignment -name VHDL_FILE ../VHD/reg_in_out_spi.vhd
+set_global_assignment -name VHDL_FILE ../VHD/interfaz_spi.vhd
+set_global_assignment -name VHDL_FILE ../VHD/gen_sc.vhd
+set_global_assignment -name VHDL_FILE ../VHD/conv_escala_BCD.vhd
+set_global_assignment -name VHDL_FILE ../VHD/control_spi.vhd
+set_global_assignment -name VHDL_FILE ../VHD/control_medidas.vhd
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
