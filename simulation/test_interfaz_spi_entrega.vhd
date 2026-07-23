@@ -115,9 +115,9 @@ begin
 
   wait for 100*T_clk;
 
-  assert false
-  report "fone"
-  severity failure;
+  report "Simulation completed successfully" severity note;
+  std.env.stop;
+  wait;
 
 end process;
 
